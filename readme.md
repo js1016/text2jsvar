@@ -1,3 +1,5 @@
+text2jsvar
+==========
 text2jsvar is a lightweight JavaScript library for converting plain text to JS string variable.
 
 It can easily transfer the following JavaScript function text into a JavaScript string variable.
