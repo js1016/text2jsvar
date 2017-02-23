@@ -71,6 +71,7 @@ The converted text.
 ## text2jsvar.revert(convertedText, double)
 Description: Revert the converted text to the source string.
 
+### Arguments
 <table>
     <tr>
         <th>Parameter</th>
