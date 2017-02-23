@@ -1,6 +1,7 @@
 text2jsvar
 ==========
 [![NPM version](http://img.shields.io/npm/v/text2jsvar.svg?style=flat)](https://www.npmjs.com/package/text2jsvar) [![NPM downloads](http://img.shields.io/npm/dm/text2jsvar.svg?style=flat)](https://www.npmjs.com/package/text2jsvar) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
 text2jsvar is a lightweight JavaScript library for converting plain text to JS string variable.
 
 It can easily transfer the following JavaScript function text into a JavaScript string variable.
