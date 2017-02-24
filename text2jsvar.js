@@ -1,6 +1,6 @@
 module.exports = {
     convert: (source, double = false) => {
-        return double ? convertEscapeChars(convertEscapeChars(source)) : convertEscapeChars(source);
+        return JSON.stringify(double ? JSON.stringify(source).slice(1, -1).replace(/'/g, '\\\'') : source).slice(1, -1).replace(/'/g, '\\\'');
     },
     revert: (convertedText, double = false) => {
         let output = convertedText;
@@ -30,16 +30,6 @@ if (!String.prototype.endsWith) {
         let lastIndex = subjectString.indexOf(searchString, position);
         return lastIndex !== -1 && lastIndex === position;
     };
-}
-
-function convertEscapeChars(source) {
-    return source.replace(/\\/g, '\\\\')
-        .replace(/\n/g, '\\n')
-        .replace(/\r/g, '\\r')
-        .replace(/\t/g, '\\t')
-        .replace(/\f/g, '\\f')
-        .replace(/"/g, '\\"')
-        .replace(/'/g, '\\\'');
 }
 
 function revertEscapeChars(str, target) {
